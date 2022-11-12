@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import Props from './components/props'
+import Rasm from './logo.svg'
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Props name='Anvar' age="24" adres={Rasm} bname="Tugma"/>
+      <Props name="Ali" age="30"/>
+      <Props name="Vali" age="40"/>
+      <Props name="Sobir" age="60"/>
+    </>
   );
 }
 
+
 export default App;
+
